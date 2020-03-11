@@ -1,0 +1,53 @@
+.plan {
+    box-shadow: 0px 0px 4px #8382828c;
+    height: 165px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s box-shadow linear;
+    background-color: #fff;
+}
+
+.plan:hover {
+    box-shadow: 0px 0px 4px #838282d7;
+}
+
+.plan img {
+    width: 120px;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5%;
+}
+
+.plan .plan_content {
+    margin-left: 34%;
+    /* margin-right: 2.5%; */
+    position: relative;
+    top: 7%;
+}
+
+.plan .plan_content strong {
+    font-size: 35px;
+    margin-right: 60px;
+    font-family: Roboto, sans-serif;
+    color: #111;
+    position: relative;
+}
+
+.plan .plan_content p {
+    color: #999;
+    text-align: start;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    left: -25px;
+    text-indent: 0.75em;
+}
+
+@media (max-width: 1050px) {
+    #planos {
+        grid-template-columns: repeat(1, 1fr);
+        height: 185px;
+    }
+}

@@ -1,0 +1,177 @@
+#plans {
+    margin-top: 50px;
+}
+
+#container_plans {
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    white-space: nowrap;
+    transition: 1s all linear;
+    padding-bottom: 40px;
+}
+
+.apoint {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #838282e5;
+    box-shadow: 0px 0px 2px #fff;
+    transition: .25s background-color linear;
+    cursor: pointer;
+    margin: 200px 0 0 -25px;
+    float: left;
+}
+
+.apoint:hover {
+    background-color: #838282;
+}
+
+#apoint-right {
+    margin: 200px -25px 0 0 !important;
+    float: right !important;
+}
+
+.apoint img {
+    position: relative;
+    top: 57.5%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -24px;
+    margin-left: -24px;
+    transform: rotate(180deg);
+}
+
+#apoint-right img {
+    left: 65% !important;
+    transform: none;
+}
+
+.pl {
+    width: 400px;
+    height: 600px;
+    margin: 5px 15px 0;
+    display: inline-block;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 2px #aaa;
+    border-radius: 2px;
+}
+
+.up {
+    background-color: #ffffff;
+    width: 100%;
+    height: 250px;
+    padding-top: 20px;
+}
+
+.title_product {
+    width: 90%;
+    height: 40px;
+    border-radius: 40px;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+    line-height: 45px;
+    color: #555;
+    font-family: 'Minecraft', sans-serif;
+    box-shadow: 0px 0px 2px #888;
+}
+
+.title_product h1 {
+    position: relative;
+    z-index: 19;
+    user-select: text;
+}
+
+#machines_back {
+    margin-top: 50px;
+}
+
+.machines {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.machine {
+    flex: 1;
+    text-align: center;
+    margin: -75px auto;
+    width: 150px;
+    height: auto;
+    position: relative;
+}
+
+.buy {
+    width: 75%;
+    height: 60px;
+    position: relative;
+    top: -30px;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    background-color: #8471db;
+    box-shadow: 0 0 4px #8471db;
+    color: #fafafa;
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    transition: 1s box-shadow linear;
+}
+
+.buy:hover {
+    box-shadow: 0 0 10px #7c66df;
+}
+
+.listing {
+    height: 330px;
+}
+
+.listing ul li {
+    user-select: text !important;
+    position: relative;
+    top: 20px;
+    background-image: url(/images/on.png);
+    width: 100%;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    text-indent: 3em;
+    font-size: 20px;
+    color: #555;
+    margin-left: 30px;
+    line-height: 35px;
+    list-style: none;
+}
+
+#not_exist {
+    font-size: 40px;
+    color: #777;
+    font-weight: 900;
+    padding-bottom: 75px;
+    padding-top: 75px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-family: Roboto, sans-serif;
+}
+
+.pricing {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    color: #47a047;
+    font-size: 40px;
+    font-family: MinecrafterReg, sans-serif;
+}
+
+#teste_loop {
+    width: 400px;
+    height: 400px;
+    margin-top: -300px;
+    margin: auto;
+}

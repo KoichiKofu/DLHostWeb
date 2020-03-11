@@ -1,0 +1,30 @@
+/* @font-face {
+  font-family: '';
+  src: ;
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: 'Minecraf';
+  src: url('/fonts/Minecraf.eot'), url('/fonts/Minecraft.ttf') format('truetype'), url('/fonts/Minecraft.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinecrafterReg';
+  src: url('/fonts/MinecrafterReg.eot'), url('/fonts/MinecrafterReg.ttf') format('truetype'), url('/fonts/MinecrafterReg.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Burbank';
+  src: url('/fontes/Burbank/BurbankBigCondensed-Bold.eot'),
+    url('/fontes/Burbank/BurbankBigCondensed-Bold.svg') format('svg'),
+    url('/fontes/Burbank/BurbankBigCondensed-Bold.ttf') format('truetype'),
+    url('/fontes/Burbank/BurbankBigCondensed-Bold.woff') format('woff'),
+    url('/fontes/Burbank/BurbankBigCondensed-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

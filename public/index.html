@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<link rel="icon" type="image/png" href="logo.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>DLHostBR</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: #FFFAFA;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="root"></div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script>
+	var x = false;
+    var root = document.documentElement;
+    root.className += ' js';
+
+    function boxTop(idBox) {
+        var boxOffset = $(idBox).offset().top;
+        return boxOffset;
+    }
+
+    function starter() {
+        var content = document.querySelector("#contain-rating");
+        var x = (Number(content.classList.value)/2)*1000;
+        $("#contain-rating").animate({ scrollLeft: '1' }, x*8.5);
+    }
+
+    function finaly() {
+        var content = document.querySelector("#contain-rating");
+        var x = (Number(content.classList.value)/2)*1000;
+        var o = '+='+x;
+        $("#contain-rating").animate({ scrollLeft: o }, x*8.5);
+    }
+    function start() {
+        finaly();
+        var content = document.querySelector("#contain-rating");
+        var x = (Number(content.classList.value)/2)*1000;
+        starter();
+        setInterval(() => {
+            start();
+        }, x*18);
+    }
+    $(document).ready(function() {
+        var content = document.querySelector("#contain-rating");
+        if(content) {
+            start();
+        }
+        $("#apoint-right").click(function(){
+            var container = document.getElementById("container_plans");
+            $('#container_plans').animate({ scrollLeft: '+=400' }, 800);
+            return false;
+        }); 
+        $("#apoint-left").click(function(){
+            var container = document.getElementById("container_plans");
+            $('#container_plans').animate({ scrollLeft: '-=400' }, 800);
+            return false;
+        }); 
+
+        var $target = $('.information'),
+                animationClass = 'information-init',
+                windowHeight = $(window).height(),
+                offset = windowHeight - (windowHeight / 4);
+
+        function animeScroll() {
+            var documentTop = $(document).scrollTop();
+            $target.each(function() {
+                if (documentTop > boxTop(this) - offset) {
+                    $(this).addClass(animationClass);
+                } else {
+                    $(this).removeClass(animationClass);
+                }
+            });
+        }
+        animeScroll();
+
+        $(document).scroll(function() {
+            setTimeout(function() {animeScroll()}, 150);
+        });
+    });
+</script>
+
+</html>

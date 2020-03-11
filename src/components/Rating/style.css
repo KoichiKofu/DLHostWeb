@@ -1,0 +1,68 @@
+#contain-rating {
+    width: 100%;
+    margin: auto;
+    overflow: auto !important;
+    white-space: nowrap !important;
+    padding-bottom: 20px;
+    margin-bottom: 105px;
+}
+
+.rating {
+    display: inline-block;
+    margin-top: 25px;
+    list-style: none;
+    width: 600px;
+    height: 175px;
+    box-shadow: 0 0 5px #999;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.text {
+    font-size: 18px;
+    color: #444;
+    text-indent: 1.5em;
+    white-space: normal !important;
+    margin-left: 25px;
+    margin-right: 25px;
+    user-select: text !important;
+}
+
+.dados {
+    float: right;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+.dados img {
+    width: 64px;
+    border-radius: 32px;
+}
+
+.date {
+    user-select: text !important;
+    font-size: 15px;
+    color: #999;
+    font-weight: bold;
+    float: left;
+    line-height: 64px;
+    margin-right: 10px;
+}
+
+.classfic {
+    margin-top: 40px;
+    float: left;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    user-select: text !important;
+    font-family: Roboto, sans-serif;
+}
+
+.checked {
+    color: #666;
+}

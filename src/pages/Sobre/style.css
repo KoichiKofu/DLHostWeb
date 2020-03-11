@@ -1,0 +1,17 @@
+#sobre {
+    width: 90%;
+    padding-bottom: 75px;
+    padding-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+    margin: 175px auto 35px;
+    text-align: center;
+    font-size: 30px;
+    color: #444;
+    font-family: Merriweather;
+}
+
+#sobre h1 {
+    user-select: text !important;
+    font-weight: 800;
+}

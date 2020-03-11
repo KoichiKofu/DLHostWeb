@@ -1,0 +1,30 @@
+#planos {
+    width: 90%;
+    height: 120px;
+    margin: 100px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    list-style: none;
+}
+
+#planos a {
+    text-decoration: none;
+}
+
+.text_title {
+    text-align: center;
+    font-size: 65px;
+    font-weight: 800;
+    color: #444;
+    font-family: Merriweather, sans-serif;
+}
+
+#slides_main {
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #8382828c;
+    margin: 30px auto 100px;
+    background-color: #fff;
+    padding: 15px 0 15px;
+}

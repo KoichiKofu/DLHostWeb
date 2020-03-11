@@ -1,0 +1,43 @@
+#menu ul li {
+	line-height: 85px;
+    width: 150px;
+    text-align: center;
+	float: left;
+	list-style: none;
+	color: white;
+	font-weight: 900;
+	font-size: 40px;
+	cursor: pointer;
+    position: relative;
+    margin-top: -10px;
+}
+#menu ul {
+	float: right;
+	padding-right: 50px;
+}
+.bar {
+    position: relative;
+    top: 5px;
+    width: 0;
+    transition: 0.5s all linear;
+    height: 10px;
+    border-radius: 8px;
+    background-color: #33333394;
+    margin-left: 15px;
+}
+
+#menu ul li:hover .bar {
+    width: 120px;
+}
+
+#menu {
+	width: 100%;
+	background-color: #6f3ffd !important;
+    height: 85px;
+	z-index: 11;
+}
+#pe_menu {
+    width: 100%;
+    height: 50px;
+    transform: rotate(180deg);
+}

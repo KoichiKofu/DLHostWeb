@@ -1,0 +1,103 @@
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		transition: .5s all linear;
+		transition: x;
+	}
+	html, body {
+		width: 100%;
+		height: 100%;
+	}
+	.nav div {
+		width: 100%;
+		height: 100%;
+	}
+	#div_1 {
+		background-image: url(THUMB_SMCODES.png);
+		background-size: 100%;
+	}
+	#div_2 {
+		background-image: url(pizap_15.jpg);
+		background-size: 100%;
+	}
+	#up {
+		width: 100%;
+		height: 75px;
+		text-align: center;
+		position: fixed;
+		background-color: #333;
+		cursor: pointer;
+		transition: .5s all linear;
+	}
+	#up:hover {
+		background-color: #111;
+	}
+	#up img {
+		width: 80px;
+		transform: rotate(-90deg);
+	}
+	#down {
+		width: 100%;
+		height: 75px;
+		position: fixed;
+		top: 600px;
+		text-align: center;
+		background-color: #333;
+		cursor: pointer;
+		transition: .5s all linear;
+		margin-bottom: -5px;
+	}
+	#down:hover {
+		background-color: #111;
+	}
+	#down img {
+		width: 75px;
+		transform: rotate(90deg);
+	}
+</style>
+<html id="html">
+	<body id="body">
+
+		<div id="up">
+			<img src="arrow.png" />
+		</div>
+		<div class="nav">
+			<a href="#miss">
+				<div id="div_1">
+				</div>
+			</a>
+			<a href="#thumb">
+				<div id="div_2">
+				</div>
+			</a>
+		</div>
+		<div id="down">
+			<img src="arrow.png" />
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="/jquery-3.1.1.min.js"></script>
+<script>
+	var x = 1;
+	$('#up').on('click', function(e) {
+		console.log(x)
+		if(x <= 1) return alert("Não temos mais nenhuma div.");
+		x--;
+		e.preventDefault();
+		console.log($('#div_'+x).position().top);
+		$('html, body').animate({ 
+			scrollTop: $('#div_'+x).position().top
+		}, 750);
+	});
+	$('#down').on('click', function(e) {
+		console.log(x)
+		if(x >= 2) return alert("Não temos mais nenhuma div");
+		x++;
+		e.preventDefault();
+		console.log($('#div_'+x).position().top);
+		$('html, body').animate({ 
+			scrollTop: $('#div_'+x).position().top
+		}, 750);
+	});
+</script>
